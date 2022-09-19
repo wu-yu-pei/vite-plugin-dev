@@ -6,17 +6,19 @@ specifiers:
   vite: link:../../node_modules/vite
   vite-plugin: link:../../
   vue: ^3.2.37
+  vue-router: '4'
   vue-tsc: ^0.40.4
 
 dependencies:
   vue: 3.2.39
+  vue-router: 4.1.5_vue@3.2.39
 
 devDependencies:
-  '@vitejs/plugin-vue': 3.1.0_coslqyjgg4krwh7nsdaiylcv3y
+  '@vitejs/plugin-vue': 3.1.0_vue@3.2.39
   typescript: link:../../node_modules/typescript
   vite: link:../../node_modules/vite
   vite-plugin: link:../..
-  vue-tsc: 0.40.13_myzqxwkhiu556ytjaoy2zhro7y
+  vue-tsc: 0.40.13
 
 packages:
 
@@ -43,14 +45,13 @@ packages:
       '@babel/helper-validator-identifier': 7.19.1
       to-fast-properties: 2.0.0
 
-  /@vitejs/plugin-vue/3.1.0_coslqyjgg4krwh7nsdaiylcv3y:
+  /@vitejs/plugin-vue/3.1.0_vue@3.2.39:
     resolution: {integrity: sha512-fmxtHPjSOEIRg6vHYDaem+97iwCUg/uSIaTzp98lhELt2ISOQuDo2hbkBdXod0g15IhfPMQmAxh4heUks2zvDA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       vite: ^3.0.0
       vue: ^3.2.25
     dependencies:
-      vite: link:..\..\node_modules\vite
       vue: 3.2.39
     dev: true
 
@@ -125,6 +126,10 @@ packages:
     dependencies:
       '@vue/compiler-dom': 3.2.39
       '@vue/shared': 3.2.39
+
+  /@vue/devtools-api/6.2.1:
+    resolution: {integrity: sha512-OEgAMeQXvCoJ+1x8WyQuVZzFo0wcyCmUR3baRVLmKBo1LmYZWMlRiXlux5jd0fqVJu6PfDbOrZItVqUEzLobeQ==}
+    dev: false
 
   /@vue/reactivity-transform/3.2.39:
     resolution: {integrity: sha512-HGuWu864zStiWs9wBC6JYOP1E00UjMdDWIG5W+FpUx28hV3uz9ODOKVNm/vdOy/Pvzg8+OcANxAVC85WFBbl3A==}
@@ -232,7 +237,16 @@ packages:
     resolution: {integrity: sha512-/OaKK0xYrs3DmxRYqL/yDc+FxFUVYhDlXMhRmv3z915w2HF1tnN1omB354j8VUGO/hbRzyD6Y3sA7v7GS/ceog==}
     engines: {node: '>=4'}
 
-  /vue-tsc/0.40.13_myzqxwkhiu556ytjaoy2zhro7y:
+  /vue-router/4.1.5_vue@3.2.39:
+    resolution: {integrity: sha512-IsvoF5D2GQ/EGTs/Th4NQms9gd2NSqV+yylxIyp/OYp8xOwxmU8Kj/74E9DTSYAyH5LX7idVUngN3JSj1X4xcQ==}
+    peerDependencies:
+      vue: ^3.2.0
+    dependencies:
+      '@vue/devtools-api': 6.2.1
+      vue: 3.2.39
+    dev: false
+
+  /vue-tsc/0.40.13:
     resolution: {integrity: sha512-xzuN3g5PnKfJcNrLv4+mAjteMd5wLm5fRhW0034OfNJZY4WhB07vhngea/XeGn7wNYt16r7syonzvW/54dcNiA==}
     hasBin: true
     peerDependencies:
@@ -240,7 +254,6 @@ packages:
     dependencies:
       '@volar/vue-language-core': 0.40.13
       '@volar/vue-typescript': 0.40.13
-      typescript: link:..\..\node_modules\typescript
     dev: true
 
   /vue/3.2.39:
